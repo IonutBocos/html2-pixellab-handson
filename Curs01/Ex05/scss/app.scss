@@ -1,0 +1,66 @@
+ul {
+  a {
+    &:hover {
+      text-decoration: none;
+      color: red;
+    }
+
+    &:active {
+      color: purple;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:visited {
+      color: green;
+    }
+  }
+}
+
+.para {
+  padding: 10px 20px;
+}
+
+.para-short {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.reverse {
+  .para-short {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .para {
+    width: 50%;
+    padding: 0;
+  }
+}
+
+$color-hover: magenta;
+$color-active: pink;
+$color-visited: lightcoral;
+
+ol {
+  a {
+    &:hover {
+      color: $color-hover;
+    }
+
+    &:active {
+      color: $color-active;
+    }
+
+    &:visited {
+      color: $color-visited;
+    }
+  }
+}
+
+.all-visited {
+  a {
+    text-decoration: line-through;
+  }
+}
