@@ -123,6 +123,13 @@ body > h1 {
 
 @media (min-width: 500px) and (max-width: 1000px) {
   body > h2 {
+    display: inherit;
+  }
+}
+
+@media (max-width: 500px) {
+  body > h2 {
     display: none;
+    color: green;
   }
 }
