@@ -18,3 +18,30 @@
 }
 
 /* can't touch this 🔨 */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 120px 80px 120px 80px;
+  grid-template-rows: 60px 100px 60px 100px;
+}
+
+.grid-item-1 {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+}
+
+.grid-item-2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  opacity: 0.5;
+}
+/* aici elementul 2 a impins elemenul 1 mai jos deoarece la primul nu e specificat linia orizontal doar vertical si atunci curge pana unde gaseste loc?
+de fapt in enunt era specificata si linia orizontala, dar e bine ca am invatat ceva :))*/
+
+.grid-item-3 {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+  opacity: 0.5;
+}
